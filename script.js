@@ -1,52 +1,66 @@
-let sub=document.getElementById('decrement');
-let add=document.getElementById('increment');
-let result=document.getElementById('number');
-let integer=0;
-
-sub.addEventListener('click', function(a){
-    a.preventDefault();
-    if (integer>0){
-      integer-=1;  result.innerText=integer;
-    return;
+const validateForm = () => {
+    let validNameRegex = "^[a-zA-Z]*$";
+    let name = document.getElementById("name");
+    let email = document.getElementById("email");
+    let validDateMonthRegex = "^[0-9]*$";
+    let dateMonth = document.getElementById("dateMonth");
+    let dateDay = document.getElementById("dateDay");
+    let dateYear = document.getElementById("dateYear");
+    let timeHour = document.getElementById("timeHour");
+    let timeMinute = document.getElementById("timeMinute");
+    if(!(name.value.length !== 0 && name.value.match(validNameRegex) && name.value.length > 2) ){
+             alert("name is invalid ");
+            return false;
+     }
+    if(!(email.value.length !== 0 )){
+        alert("please, enter a valid email!!");
+          return false;
     }
-    
-});
-
-add.addEventListener('click', function(b){
-    b.preventDefault();
-    integer +=1;
-    result.innerHTML=integer;
-    return;
-});
-
-let MyName=document.getElementById('name');
-let MyEmail=document.getElementById('email');
-let date=document.getElementById('day');
-let time=document.getElementById('clock');
-let counter=document.getElementById('number');
-let output=document.getElementById('output');
-let submit=document.querySelector('#submit');
-
-console.log(output);
-submit.addEventListener('click', validate)
-
-function validate(e){
-    e.preventDefault();
-    if(MyName.value==""){
-        output.innerText="**Username must be filled out!!!";
-        return;
+    if(!(dateMonth.value.length !== 0 && dateMonth.value.match(validDateMonthRegex) && dateMonth.value <= 12) ){
+         alert("invalid month!!");
+         return false;
     }
-    if(MyEmail.value==""){
-        output.innerText="**Email must be filled out!!!";
-        return;
+    if (!(dateDay.value.length !== 0 && dateDay.value.match(validDateMonthRegex) && dateDay.value < 32)) {
+        alert("invalid day!!");
+        return false;
     }
-    if(date.value==""){
-        output.innerText="**Date must be filled out!!!";
-        return;
+    if (!(dateYear.value.length !== 0 && dateYear.value.match(validDateMonthRegex) && dateYear.value > 2021 )){
+      alert("invalid year!!");
+        return false;
+    }
+    if(!(timeHour.value.length !== 0 && timeHour.value < 13 && timeHour.value !== 0)){
+        alert("invalid time in hour!!");
+        return false;
+    }
+    if(!(timeMinute.value.length !== 0 && timeMinute.value < 60)){
+  
+        alert("invalid time in minutes"); 
+        return false;
     } 
-    if(time.value==""){
-        output.innerText="**Time must be filled out!!!";
-        return;
+  }
+  var numberOfPeople = 1;
+  function incrementNumber() {
+    if (numberOfPeople < 10) {
+      numberOfPeople = numberOfPeople+1;
+    } else if (numberOfPeople == 10) {
+      numberOfPeople = 1;
+    }
+    if(numberOfPeople == 1) {
+      document.getElementById("number").innerHTML = `${numberOfPeople} Person`;
+    }
+    else {
+      document.getElementById("number").innerHTML = numberOfPeople + " People";
     } 
-}
-console.log(sub);
+  } 
+  function decrementNumber() {
+    if (numberOfPeople > 1) {
+      numberOfPeople = numberOfPeople -1;
+    }
+    if(numberOfPeople == 1) {
+      document.getElementById("number").innerHTML = `${numberOfPeople} Person`; 
+    }
+    else {
+      document.getElementById("number").innerHTML = `${numberOfPeople} People`;
+    }
+  
+  }

@@ -2,9 +2,6 @@ body{
     background-color: black;
     font-size: large;
     text-align: center;
-   
-    
-    
 }
 #container{
     background-color: white;
@@ -40,11 +37,12 @@ form{
     padding-top: 5%;
     font-size: large;
 }
-#pickadate{
+#date{
     display: flex;
     margin-right: -25%;
+
 }
-#pickadate1{
+#dateMonth{
     border: transparent;
     width: 10%;
     height: 5%;
@@ -54,7 +52,7 @@ form{
     margin-left: 8%;
     text-align: center;
 }
-#pickadate2{
+#dateDay{
     border: transparent;
     width: 10%;
     height: 5%;
@@ -64,7 +62,7 @@ form{
     margin-left: 8%;
     text-align: center;
 }
-#pickadate3{
+#dateYear{
     border: transparent;
     width: 10%;
     height: 5%;
@@ -75,12 +73,12 @@ form{
     text-align: center;
 }
 
-#pickatime{
+#time{
     display: flex;
     margin-right: -25%;
     
 }
-#pickatime1{
+#timeHour{
     border: transparent;
     width: 10%;
     margin-left: 7%;
@@ -89,7 +87,7 @@ form{
     border-bottom: 2px solid rgb(224, 222, 222);
     text-align: center;
 }
-#pickatime2{
+#timeMinute{
     border: transparent;
     margin-left: 9%;
     height: 5%;
@@ -115,12 +113,13 @@ select{
     font-size: large;
     margin-top: 15%;
 }
-#person{
+#numberOfPeople{
     border: transparent; 
     border-bottom: 2px solid rgb(224, 222, 222);
     text-align: center;
     width: 75%;
     margin-bottom: 10%;
+    margin-left: 70px;
 }
 #decrement{
     color:brown;
@@ -129,7 +128,7 @@ select{
     background-color: transparent;
     font-size: large;
 }
-.btn{
+#submitButton{
     padding: 2%;
     width: 75%;
     background-color: black;
