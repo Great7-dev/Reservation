@@ -1,0 +1,139 @@
+body{
+    background-color: black;
+    font-size: large;
+    text-align: center;
+   
+    
+    
+}
+#container{
+    background-color: white;
+    height: 10%;
+    width: 50%; 
+    margin: 20%;
+    padding: 2px;
+    font-size: larger;
+    margin-right: 180px;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+form{
+    margin: 5%;
+}
+#name{
+    border:transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin: 2% 0% 2% -10%;
+    width : 90%;
+    padding: 5% 0% 0% 0%;
+    font-size: large;
+    
+}
+#email{
+    border:transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin: 0% 0% 10%  -10%;
+    width : 90%;
+    padding-top: 5%;
+    font-size: large;
+}
+#pickadate{
+    display: flex;
+    margin-right: -25%;
+}
+#pickadate1{
+    border: transparent;
+    width: 10%;
+    height: 5%;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin-bottom: 10%;
+    font-size: large;
+    margin-left: 8%;
+    text-align: center;
+}
+#pickadate2{
+    border: transparent;
+    width: 10%;
+    height: 5%;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin-bottom: 10%;
+    font-size: large;
+    margin-left: 8%;
+    text-align: center;
+}
+#pickadate3{
+    border: transparent;
+    width: 10%;
+    height: 5%;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    margin-bottom: 10%;
+    font-size: large;
+    margin-left: 8%;
+    text-align: center;
+}
+
+#pickatime{
+    display: flex;
+    margin-right: -25%;
+    
+}
+#pickatime1{
+    border: transparent;
+    width: 10%;
+    margin-left: 7%;
+    height: 5%;
+    font-size: large;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    text-align: center;
+}
+#pickatime2{
+    border: transparent;
+    margin-left: 9%;
+    height: 5%;
+    width: 10%;
+    font-size: large;
+    border-bottom: 2px solid rgb(224, 222, 222);
+    text-align: center;
+}
+select{
+    color:brown;
+    width :13%;
+    margin-left : 9%; 
+    border: transparent;
+    font-size: large; 
+    border-bottom: 2px solid rgb(224, 222, 222);
+    text-align: center;
+}
+#increment{
+    color:brown;
+    margin-left: 25%;
+    border: transparent; 
+     background-color: transparent;
+    font-size: large;
+    margin-top: 15%;
+}
+#person{
+    border: transparent; 
+    border-bottom: 2px solid rgb(224, 222, 222);
+    text-align: center;
+    width: 75%;
+    margin-bottom: 10%;
+}
+#decrement{
+    color:brown;
+    margin-right: 25%;
+    border: transparent; 
+    background-color: transparent;
+    font-size: large;
+}
+.btn{
+    padding: 2%;
+    width: 75%;
+    background-color: black;
+    color: white;
+    text-align: center;    
+    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./index.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <div id="container" >
+        <form>
+           <div>
+              <label for="name"></label>
+              <input type="text" id = "name" placeholder="Name">
+           </div>
+           <div>
+              <label for="email"></label>
+                 <input type="email" id = "email" placeholder="Email">
+              </div>
+              <div id = "date">
+                 <label for="date">Pick a date</label>
+                 <input type="number" id="pickadate1" placeholder="MM" min="1" max="12">
+                 <input type="number" id="pickadate2" placeholder="DD" min="1" max="31">
+                 <input type="number" id="pickadate3" placeholder="YYYY" min="2022" max="2023">
+              </div>
+              <div id = "clock" class ="time">
+                 <label for="time">Pick a time</label>
+                 <input type="text" id="pickatime1" placeholder="09">
+                 <input type="text" id="pickatime2" placeholder="00">
+                 <select>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                 </select>
+              </div>
+              <div class="numofpersons">
+               <input type="button" value="-" id="decrement">
+               <label for="display"></label>
+               <strong><span> 1 person</span></strong>
+               <input type="button"value="+" id="increment" >
+               <input type="text" value="" id="person">   
+            </div>
+              <div>
+                 <input class="btn" type="submit" value="Make Reservation" id="submit">
+                 <p id = "output"></p>
+              </div>
+        </form>
+     </div>
+     <scrpt src = "./script.js"></scrpt>
+</body>
+</html>
